@@ -13,6 +13,7 @@
 
 ## generateTrialLicense
 返回格式
+
 -- DBeaver EE LICENSE - DB-ZS1MPZT9--FUB
 -- Issued at Tue Jan 28 17:04:37 UTC 2020 to Mr Wu //
 GcEVPtVH+fzyCX3Jw/b2iDGHIYe20IwwGGzvCaSvgN+SOLyeOfmhTgIXkhhuJsCi7Ov/7Sy2Hpk3
@@ -21,6 +22,7 @@ VdHjehLS727GlKOKKKkZ6s9C8bt+Aw4WEhDsivOJpQt5eLUjvDLhZC0ols4R9kIXHRo1KcS5AaHy
 /AU8wueD1yaXHQp9OML5WmBDZapiuSKoQUH/dPhu6C7XRj1EAiTueNibb9rSfbhlUYKgA/1is4nW
 42xwiN3+jzQrBYO1NQIYAlGHxlsJ0+IxqVLHCw==
 请求格式
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <request license="trial" productId="dbeaver-ee" productVersion="6.3">
@@ -31,4 +33,5 @@ VdHjehLS727GlKOKKKkZ6s9C8bt+Aw4WEhDsivOJpQt5eLUjvDLhZC0ols4R9kIXHRo1KcS5AaHy
 注意`Content-Type`必须使用`text/xml`
 
 ## LicenseKeyProvider
-类名/路径 com/dbeaver/ee/runtime/lm/DBeaverEnterpriseLM$LicenseKeyProvider
+路径 com/dbeaver/ee/runtime/lm/DBeaverEnterpriseLM$LicenseKeyProvider  
+类名 com/dbeaver/ee/runtime/lm/DBeaverEnterpriseLM$LicenseKeyProvider 

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b529324-55b5-43df-9ff5-f04fd95869f0" name="默认更改列表" comment="" />
+    <list default="true" id="5b529324-55b5-43df-9ff5-f04fd95869f0" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/transformers/LoadKeyTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/transformers/LoadKeyTransformer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +62,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Wz0HCBIGk15c0ALzdBUtnEyWrS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -70,6 +80,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/lib/com.dbeaver.ee.runtime_2.0.51.201912081802.jar!/com/dbeaver/ee/runtime/lm/DBeaverEnterpriseLM.class" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums" />
     <property name="last_opened_file_path" value="D:/Program Files/DBeaverEE/plugins" />
@@ -78,6 +89,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3264368" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -88,7 +100,7 @@
       <recent name="E:\SourceCode\DBeaver-Agent" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DBeaver-Agent [jar]">
+  <component name="RunManager" selected="JAR Application.Agent-Test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.misakacloud.dbee.Main" />
       <module name="dbee.main" />
@@ -134,7 +146,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="DBeaver-Agent [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DBeaver-Agent [jar]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -153,6 +165,15 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Agent-Test" type="JarApplication">
+      <option name="JAR_PATH" value="D:/Program Files/DBeaverEE/plugins/org.eclipse.equinox.launcher_1.5.600.v20191014-2022.jar" />
+      <option name="VM_PARAMETERS" value="-javaagent:E:\SourceCode\DBeaver-Agent\build\libs\dbee-1.0-SNAPSHOT.jar" />
+      <option name="WORKING_DIRECTORY" value="D:\Program Files\DBeaverEE" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="DBeaver-Agent [jar]" run_configuration_type="GradleRunConfiguration" />
+      </method>
+    </configuration>
     <configuration name="Debug-DBeaver" type="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -169,13 +190,13 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.test" />
-      <item itemvalue="Gradle.DBeaver-Agent [build]" />
       <item itemvalue="Gradle.DBeaver-Agent [jar]" />
+      <item itemvalue="Gradle.DBeaver-Agent [build]" />
+      <item itemvalue="JAR Application.Agent-Test" />
       <item itemvalue="远程.Debug-DBeaver" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.DBeaver-Agent [jar]" />
         <item itemvalue="Gradle.DBeaver-Agent [build]" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.test" />
@@ -210,7 +231,7 @@
       <workItem from="1580238374499" duration="2265000" />
       <workItem from="1580274286357" duration="1334000" />
       <workItem from="1580283870122" duration="2884000" />
-      <workItem from="1580292972622" duration="6770000" />
+      <workItem from="1580292972622" duration="7516000" />
     </task>
     <servers />
   </component>
@@ -222,10 +243,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1580300708764" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580297945629">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580301314890">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580297945629" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580301314890" />
     <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1580298312639">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -242,26 +263,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1580138264956" />
-    <state x="761" y="328" key="FileChooserDialogImpl" timestamp="1580300707097">
+    <state x="761" y="328" key="FileChooserDialogImpl" timestamp="1580301280195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="761" y="328" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580300707097" />
-    <state width="1877" height="157" key="GridCell.Tab.0.bottom" timestamp="1580300661831">
+    <state x="761" y="328" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580301280195" />
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1580301456598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="157" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580300661831" />
-    <state width="1877" height="157" key="GridCell.Tab.0.center" timestamp="1580300661831">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580301456598" />
+    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1580301456598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="157" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580300661831" />
-    <state width="1877" height="157" key="GridCell.Tab.0.left" timestamp="1580300661831">
+    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580301456598" />
+    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1580301456598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="157" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580300661831" />
-    <state width="1877" height="157" key="GridCell.Tab.0.right" timestamp="1580300661831">
+    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580301456598" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1580301456598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="157" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580300661831" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580301456598" />
     <state width="1877" height="243" key="GridCell.Tab.1.bottom" timestamp="1580297950321">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
