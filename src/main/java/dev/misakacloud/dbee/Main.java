@@ -6,7 +6,6 @@ import java.util.Date;
 
 import dev.misakacloud.dbee.enums.LMLicenseType;
 import dev.misakacloud.dbee.utils.Crypt;
-import dev.misakacloud.dbee.utils.CryptKey;
 
 import static dev.misakacloud.dbee.utils.Crypt.*;
 
@@ -18,16 +17,22 @@ public class Main {
                 "/AU8wueD1yaXHQp9OML5WmBDZapiuSKoQUH/dPhu6C7XRj1EAiTueNibb9rSfbhlUYKgA/1is4nW\n" +
                 "42xwiN3+jzQrBYO1NQIYAlGHxlsJ0+IxqVLHCw==";
         lic = lic.replaceAll("\\n", "").trim();
-        CryptKey cryptKeys=new CryptKey();
-        License licObj = new License(lic, cryptKeys.getPublicKey());
+        Key publicKey = null;
+        try {
+            publicKey = getKey();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+//
+        License licObj = new License(lic, publicKey);
         String licInfo = licObj.toString();
         System.out.println(licInfo);
-//        licObj.setLicenseType(LMLicenseType.YEAR_UPDATE);
-//        licObj.setLicenseEndTime(new Date(1893427200000L));
-//        licObj.setYearsNumber((byte) 10);
+        licObj.setLicenseType(LMLicenseType.YEAR_UPDATE);
+        licObj.setLicenseEndTime(new Date(1893427200000L));
+        licObj.setYearsNumber((byte) 10);
 //        licObj.setFlags(1);
-//        String newLic = licObj.getEncryptLicense(publicKey);
-//        System.out.println(newLic);
+        String newLic = licObj.getEncryptLicense(publicKey);
+        System.out.println(newLic);
         licInfo = licObj.toString();
         System.out.println(licInfo);
     }
