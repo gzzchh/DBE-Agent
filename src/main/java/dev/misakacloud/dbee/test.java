@@ -1,6 +1,8 @@
 package dev.misakacloud.dbee;
 
 
+import dev.misakacloud.dbee.utils.CryptKey;
+
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
@@ -14,15 +16,9 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 public class test {
-    public static PublicKey getPublicKey(String key) throws Exception {
-        byte[] keyBytes;
-        keyBytes = Base64.getDecoder().decode(key);
-        X509EncodedKeySpec keySpec = new X509EncodedKeySpec(keyBytes);
-        KeyFactory keyFactory = KeyFactory.getInstance("RSA");
-        PublicKey publicKey = keyFactory.generatePublic(keySpec);
-        return publicKey;
+    public static Key getPublicKey(String key) throws Exception {
+        return new CryptKey().getPublicKey();
     }
-
 
     public static void main(String[] args) throws Exception {
 //        String lic = "kKGIrBS2fhcXMeMnqblGBdTmnFeMnD9hTIwGAGhJf6myjyNivoKFz1npmv0udI2oIMxdPWdfHMW0P+9+TzYzruK9huqiZmr8WVI91WHt8FnMzV4Sx1BfN1R+DeYdbQEHD+VrGPSvyczCZRtIPLIec3Bk+ELty8qZbjxODNLX3sfGMvUvANjrjydjlOorbmNIAvlw55Iepwuh0EM0RAllkYe6ymE8TjvLQEOzCFhUlSpNkghtgaMGx0hVrYEV0/YVR67ZnCLM1Dzf+CvQTrLgiNqCJ3xyN32DEyLASbVjYdP4YVMp8NVKnsdVorPU5mBuwlwylGwMU/WETka4252bhw==";
@@ -53,6 +49,7 @@ public class test {
         }
         String res = new String(decodedBytes);
 //        System.out.println(res);
+
 
     }
 }

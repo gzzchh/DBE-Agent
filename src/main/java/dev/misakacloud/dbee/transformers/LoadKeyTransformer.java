@@ -20,16 +20,21 @@ public class LoadKeyTransformer implements ClassFileTransformer {
         if (className.contains("DBeaverEnterpriseLM") && className.contains("LicenseKeyProvider")) {
             System.out.println("正在加载的类:" + className);
             CtClass ctclass = null;
+            ClassPool cp = ClassPool.getDefault();
+
+            // 读取自己的包
             try {
-                ctclass = ClassPool.getDefault().get(className);// 使用全称,用于取得字节码类<使用javassist>
-                CtMethod[] ctmethods = ctclass.getMethods();
-                for (CtMethod ctMethod : ctmethods) {
-                    CodeAttribute ca = ctMethod.getMethodInfo2().getCodeAttribute();
-                    if (ctMethod.getName().equals("getDecryptionKey")){
-                        System.out.println("检测到读取解密Key的行为");
-                        ctMethod.
-                    }
-                }
+                Class.forName("dev.misakacloud.dbee.utils");
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+            // 写入导入语句
+            cp.importPackage("dev.misakacloud.dbee.utils");
+            try {
+//                ctclass = ClassPool.getDefault().get(className);// 使用全称,用于取得字节码类<使用javassist>
+                CtMethod getKeyMethod = cp.getMethod("DBeaverEnterpriseLM$LicenseKeyProvider", "getDecryptionKey");
+                System.out.println("检测到读取解密Key的行为");
+                getKeyMethod.insertBefore("return new CryptKey().getPublicKey();");
                 return ctclass.toBytecode();
             } catch (Exception e) {
                 System.out.println(e.getMessage());

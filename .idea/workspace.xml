@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b529324-55b5-43df-9ff5-f04fd95869f0" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/CryptKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/transformers/LoadKeyTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/transformers/LoadKeyTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/CryptKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/CryptKey.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,7 @@
       <recent name="E:\SourceCode\DBeaver-Agent" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="JAR Application.Agent-Test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.misakacloud.dbee.Main" />
       <module name="dbee.main" />
@@ -233,6 +234,7 @@
       <workItem from="1580274286357" duration="1334000" />
       <workItem from="1580283870122" duration="2884000" />
       <workItem from="1580292972622" duration="9187000" />
+      <workItem from="1580312452195" duration="4903000" />
     </task>
     <servers />
   </component>
@@ -244,10 +246,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1580300708764" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580302340338">
+    <state x="790" y="375" key="#com.intellij.debugger.actions.ViewTextAction" timestamp="1580316695383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580302340338" />
+    <state x="790" y="375" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1920.1040@0.0.1920.1040" timestamp="1580316695383" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580316615569">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580316615569" />
     <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1580298312639">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -260,46 +266,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#项目结构/0.0.1920.1040@0.0.1920.1040" timestamp="1580240180307" />
-    <state x="718" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580138264956">
+    <state x="718" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580317343622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1580138264956" />
+    <state x="718" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1580317343622" />
     <state x="761" y="328" key="FileChooserDialogImpl" timestamp="1580301280195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="328" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580301280195" />
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1580303079045">
+    <state width="1877" height="243" key="GridCell.Tab.0.bottom" timestamp="1580317629565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580303079045" />
-    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1580303079045">
+    <state width="1877" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580317629565" />
+    <state width="1877" height="243" key="GridCell.Tab.0.center" timestamp="1580317629564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580303079045" />
-    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1580303079044">
+    <state width="1877" height="243" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580317629564" />
+    <state width="1877" height="243" key="GridCell.Tab.0.left" timestamp="1580317629564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580303079044" />
-    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1580303079045">
+    <state width="1877" height="243" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580317629564" />
+    <state width="1877" height="243" key="GridCell.Tab.0.right" timestamp="1580317629564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580303079045" />
-    <state width="1877" height="243" key="GridCell.Tab.1.bottom" timestamp="1580303077832">
+    <state width="1877" height="243" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580317629564" />
+    <state width="1877" height="243" key="GridCell.Tab.1.bottom" timestamp="1580317631082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580303077832" />
-    <state width="1877" height="243" key="GridCell.Tab.1.center" timestamp="1580303077832">
+    <state width="1877" height="243" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580317631082" />
+    <state width="1877" height="243" key="GridCell.Tab.1.center" timestamp="1580317631082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580303077832" />
-    <state width="1877" height="243" key="GridCell.Tab.1.left" timestamp="1580303077832">
+    <state width="1877" height="243" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580317631082" />
+    <state width="1877" height="243" key="GridCell.Tab.1.left" timestamp="1580317631082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580303077832" />
-    <state width="1877" height="243" key="GridCell.Tab.1.right" timestamp="1580303077832">
+    <state width="1877" height="243" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580317631082" />
+    <state width="1877" height="243" key="GridCell.Tab.1.right" timestamp="1580317631082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580303077832" />
+    <state width="1877" height="243" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580317631082" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1580239472766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -308,14 +314,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580239611454" />
-    <state x="658" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580292981101">
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580312453329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="658" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580292981101" />
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580312453329" />
     <state x="578" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580293615410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="578" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580293615410" />
+    <state x="381" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1580317106967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="381" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1580317106967" />
     <state x="644" y="119" width="632" height="801" key="find.popup" timestamp="1580140013470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -324,13 +334,15 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>jar://$PROJECT_DIR$/lib/com.dbeaver.ee.runtime_2.0.51.201912081802.jar!/com/dbeaver/ee/runtime/lm/DBeaverEnterpriseLM.class</url>
-          <line>110</line>
-          <properties class="com.dbeaver.ee.runtime.lm.DBeaverEnterpriseLM.LicenseKeyProvider" method="getDecryptionKey">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="5" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/transformers/LoadKeyTransformer.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/transformers/LoadKeyTransformer.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
