@@ -1,5 +1,10 @@
 package dev.misakacloud.dbee.transformers;
 
+import javassist.ClassPool;
+import javassist.CtClass;
+import javassist.CtMethod;
+import javassist.bytecode.CodeAttribute;
+
 import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.IllegalClassFormatException;
 import java.security.ProtectionDomain;
@@ -20,12 +25,9 @@ public class LoadKeyTransformer implements ClassFileTransformer {
                 CtMethod[] ctmethods = ctclass.getMethods();
                 for (CtMethod ctMethod : ctmethods) {
                     CodeAttribute ca = ctMethod.getMethodInfo2().getCodeAttribute();
-                    if (ca == null) {
-                        continue;
-                    }
-                    if (!ctMethod.isEmpty()) {
-//                        System.out.println(ctMethod.getName());
-                        ctMethod.insertBefore("System.out.println(\"hello Im agent : " + ctMethod.getName() + "\");");
+                    if (ctMethod.getName().equals("getDecryptionKey")){
+                        System.out.println("检测到读取解密Key的行为");
+                        ctMethod.
                     }
                 }
                 return ctclass.toBytecode();
