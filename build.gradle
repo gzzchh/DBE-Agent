@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'dev.misakacloud'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    flatDir {
+        dirs 'lib'
+        dirs 'D:\\Program Files\\DBeaverEE\\plugins'
+    }
+    mavenCentral()
+}
+jar {
+    manifest {
+        attributes 'Main-Class': 'dev.misakacloud.dbee.Main'
+        attributes 'Premain-Class': 'dev.misakacloud.dbee.Agent'
+        attributes 'Can-Retransform-Classes': 'true'
+    }
+}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile fileTree(include: ['*.jar'], dir: 'lib')
+//    compile fileTree(include: ['*.jar'], dir: 'D:\\Program Files\\DBeaverEE\\plugins')
+
+}
