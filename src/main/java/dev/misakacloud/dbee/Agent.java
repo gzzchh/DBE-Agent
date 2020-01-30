@@ -23,8 +23,8 @@ public class Agent {
                                                     ClassLoader classLoader,
                                                     JavaModule module) {
                 return builder
-                        .method(ElementMatchers.any()) // 拦截任意方法
-                        .intercept(MethodDelegation.to(LoadKeyInterceptor.class)); // 委托
+                        .method(ElementMatchers.nameStartsWith("getDecryptionKey")) // 拦截任意方法
+                        .intercept(MethodDelegation.to(dev.misakacloud.dbee.interceptor.LoadKeyInterceptor.class)); // 委托
             }
         };
 
