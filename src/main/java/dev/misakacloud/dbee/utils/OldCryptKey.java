@@ -49,21 +49,4 @@ public class OldCryptKey {
         }
 
     }
-
-
-    public static byte[] decryptLicense(String licenseStr, Key publicKey) {
-        byte[] decodedBytes = null;
-        licenseStr = licenseStr.replaceAll("\\n", "");
-        byte[] base64DecodedBytes = Base64.getDecoder().decode(licenseStr.trim());
-        try {
-            Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
-            cipher.init(Cipher.DECRYPT_MODE, publicKey);
-            decodedBytes = cipher.doFinal(base64DecodedBytes);
-        } catch (IllegalBlockSizeException | BadPaddingException | NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException e) {
-            e.printStackTrace();
-        }
-        return decodedBytes;
-    }
-
-
 }

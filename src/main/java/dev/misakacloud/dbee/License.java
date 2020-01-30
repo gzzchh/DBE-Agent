@@ -38,7 +38,7 @@ public class License {
 
 
     public License(String licenseString, Key key) throws Exception {
-        byte[] data = OldCryptKey.decryptLicense(licenseString, key);
+        byte[] data = getDecryptedLicense(licenseString, key);
         int offset = 0;
         this.licenseFormat = LMLicenseFormat.STANDARD;
 
@@ -253,7 +253,7 @@ public class License {
 
         int offset = 0;
         // 计算许可类型
-        licenseData[offset] = (byte) this.licenseFormat.ordinal();
+        licenseData[offset] = this.licenseFormat.getId();
         // 移动偏移
         offset += 1;
         //计算许可ID
@@ -263,7 +263,7 @@ public class License {
         offset += 16;
         // 计算许可类型
 //        this.licenseType = LMLicenseType.valueOf(encryptedLicenseData[offset]);
-        licenseData[offset] = (byte) this.licenseType.ordinal();
+        licenseData[offset] = (byte) this.licenseType.getId();
         // 移动偏移
         ++offset;
         //计算签发时间
@@ -339,5 +339,19 @@ public class License {
         return encodedStr;
 
 
+    }
+
+    public byte[] getDecryptedLicense(String licenseString, Key key) {
+        byte[] decodedBytes = null;
+        licenseString = licenseString.replaceAll("\\n", "");
+        byte[] base64DecodedBytes = Base64.getDecoder().decode(licenseString.trim());
+        try {
+            Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+            cipher.init(Cipher.DECRYPT_MODE, key);
+            decodedBytes = cipher.doFinal(base64DecodedBytes);
+        } catch (IllegalBlockSizeException | BadPaddingException | NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException e) {
+            e.printStackTrace();
+        }
+        return decodedBytes;
     }
 }

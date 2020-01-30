@@ -1,17 +1,18 @@
 package dev.misakacloud.dbee.utils;
 
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.security.Key;
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;
+import java.security.PrivateKey;
+import java.security.interfaces.RSAPrivateCrtKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.PKCS8EncodedKeySpec;
+import java.security.spec.RSAPublicKeySpec;
 import java.security.spec.X509EncodedKeySpec;
-import java.util.Base64;
 
 public class MyCryptKey {
     public byte[] localKeyBytes;
@@ -31,8 +32,10 @@ public class MyCryptKey {
 
     public Key getPublicKey() {
         try {
+            PrivateKey myPrivateKey = (PrivateKey) getPrivateKey();
+            RSAPrivateCrtKey privk = (RSAPrivateCrtKey) myPrivateKey;
+            RSAPublicKeySpec publicKeySpec = new RSAPublicKeySpec(privk.getModulus(), privk.getPublicExponent());
             KeyFactory keyFactory = KeyFactory.getInstance("RSA");
-            X509EncodedKeySpec publicKeySpec = new X509EncodedKeySpec(localKeyBytes);
             return keyFactory.generatePublic(publicKeySpec);
         } catch (NoSuchAlgorithmException | InvalidKeySpecException e) {
             e.printStackTrace();

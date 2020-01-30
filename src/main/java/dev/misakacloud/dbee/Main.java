@@ -25,13 +25,14 @@ public class Main {
         License licObj = new License(lic, publicKey);
         String licInfo = licObj.toString();
         System.out.println(licInfo);
-        licObj.setLicenseType(LMLicenseType.YEAR_UPDATE);
+        licObj.setLicenseType(LMLicenseType.ULTIMATE);
         licObj.setLicenseEndTime(new Date(1893427200000L));
         licObj.setYearsNumber((byte) 10);
+        licObj.setOwnerName("MisakaCloud");
 //        licObj.setFlags(1);
+//        new MyCryptKey().getPublicKey();
         String newLic = licObj.getEncryptLicense(new MyCryptKey().getPrivateKey());
-        System.out.println(newLic);
-        licInfo = licObj.toString();
-        System.out.println(licInfo);
+        License licObjNew = new License(newLic, new MyCryptKey().getPublicKey());
+        System.out.println(licObjNew.toString());
     }
 }
