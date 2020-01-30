@@ -21,23 +21,12 @@ public class MyCryptKey {
         URL keyURL = this.getClass().getClassLoader().getResource(resourceName);
         try {
             InputStream keyStream = keyURL.openStream();
-            this.localKeyBytes = getKeyBytes(keyStream);
+            this.localKeyBytes = KeyLoader.loadKeyBytesFromStream(keyStream);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public static byte[] getKeyBytes(InputStream is) throws Exception {
-        byte[] bytes = new byte[0];
-        bytes = new byte[is.available()];
-        is.read(bytes);
-        String str = new String(bytes);
-        str.replaceAll("-----BEGIN RSA PRIVATE KEY-----", "");
-        str.replaceAll("-----END RSA PRIVATE KEY-----", "");
-        str.replaceAll("\\n", "").trim();
-        byte[] keyBytes = Base64.getDecoder().decode(str.getBytes());
-        return keyBytes;
-    }
 
     public Key getPublicKey() {
         try {

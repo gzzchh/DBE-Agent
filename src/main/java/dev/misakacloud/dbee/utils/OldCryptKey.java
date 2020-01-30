@@ -65,16 +65,5 @@ public class OldCryptKey {
         return decodedBytes;
     }
 
-    public static String encryptLicense(byte[] licenseByte, Key publicKey) {
-        byte[] encodedBytes = null;
-        try {
-            Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
-            cipher.init(Cipher.ENCRYPT_MODE, publicKey);
-            encodedBytes = cipher.doFinal(licenseByte);
-        } catch (IllegalBlockSizeException | BadPaddingException | NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException e) {
-            e.printStackTrace();
-        }
-        String encodedStr = Base64.getEncoder().encodeToString(encodedBytes);
-        return encodedStr;
-    }
+
 }

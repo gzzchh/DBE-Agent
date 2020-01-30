@@ -6,7 +6,14 @@ import dev.misakacloud.dbee.enums.LMStatusDetails;
 import dev.misakacloud.dbee.utils.Convert;
 import dev.misakacloud.dbee.utils.OldCryptKey;
 
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.NoSuchPaddingException;
+import java.security.InvalidKeyException;
 import java.security.Key;
+import java.security.NoSuchAlgorithmException;
+import java.util.Base64;
 import java.util.Date;
 
 public class License {
@@ -319,8 +326,18 @@ public class License {
 //            }
             offset += 2;
         }
-        String encryptedLicense = OldCryptKey.encryptLicense(encryptedLicenseData, key);
-        return encryptedLicense;
+
+        byte[] encodedLicenseBytes = null;
+        try {
+            Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+            cipher.init(Cipher.ENCRYPT_MODE, key);
+            encodedLicenseBytes = cipher.doFinal(encryptedLicenseData);
+        } catch (IllegalBlockSizeException | BadPaddingException | NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException e) {
+            e.printStackTrace();
+        }
+        String encodedStr = Base64.getEncoder().encodeToString(encodedLicenseBytes);
+        return encodedStr;
+
 
     }
 }

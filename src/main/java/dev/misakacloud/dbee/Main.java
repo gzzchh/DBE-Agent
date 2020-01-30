@@ -22,7 +22,6 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
-//
         License licObj = new License(lic, publicKey);
         String licInfo = licObj.toString();
         System.out.println(licInfo);
