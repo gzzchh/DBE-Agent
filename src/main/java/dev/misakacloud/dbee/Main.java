@@ -26,6 +26,7 @@ public class Main {
         String licInfo = licObj.toString();
 //        System.out.println(licInfo);
         licObj.setLicenseType(LMLicenseType.ULTIMATE);
+        licObj.setLicenseId("DB-ZS1MPZT9--YUK");
         licObj.setLicenseEndTime(new Date(1893427200000L));
         licObj.setYearsNumber((byte) 10);
         licObj.setOwnerName("MisakaCloud");
