@@ -10,6 +10,7 @@ import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.X509EncodedKeySpec;
+import java.util.Base64;
 
 public class MyCryptKey {
     public byte[] localKeyBytes;
@@ -20,23 +21,22 @@ public class MyCryptKey {
         URL keyURL = this.getClass().getClassLoader().getResource(resourceName);
         try {
             InputStream keyStream = keyURL.openStream();
-            this.localKeyBytes = getStreamBytes(keyStream);
+            this.localKeyBytes = getKeyBytes(keyStream);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public static byte[] getStreamBytes(InputStream is) throws Exception {
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        byte[] buffer = new byte[2048];
-        int len = 0;
-        while ((len = is.read(buffer)) != -1) {
-            baos.write(buffer, 0, len);
-        }
-        byte[] b = baos.toByteArray();
-        is.close();
-        baos.close();
-        return b;
+    public static byte[] getKeyBytes(InputStream is) throws Exception {
+        byte[] bytes = new byte[0];
+        bytes = new byte[is.available()];
+        is.read(bytes);
+        String str = new String(bytes);
+        str.replaceAll("-----BEGIN RSA PRIVATE KEY-----", "");
+        str.replaceAll("-----END RSA PRIVATE KEY-----", "");
+        str.replaceAll("\\n", "").trim();
+        byte[] keyBytes = Base64.getDecoder().decode(str.getBytes());
+        return keyBytes;
     }
 
     public Key getPublicKey() {

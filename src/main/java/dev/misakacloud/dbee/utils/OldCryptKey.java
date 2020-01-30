@@ -15,10 +15,7 @@ public class OldCryptKey {
     public static Key getKey() throws Exception {
         String keyJarPath = findJarPath("com.dbeaver.ee.runtime");
         InputStream in = loadResourceFromJarFile(keyJarPath, "keys/dbeaver-ee-public.key");
-        byte[] keyBytes;
-        String keyString = getBase64EncodedKey(in);
-
-        keyBytes = Base64.getDecoder().decode(keyString);
+        byte[] keyBytes = KeyLoader.loadKeyBytesFromStream(in);
         X509EncodedKeySpec keySpec = new X509EncodedKeySpec(keyBytes);
         KeyFactory keyFactory = KeyFactory.getInstance("RSA");
         PublicKey publicKey = keyFactory.generatePublic(keySpec);
@@ -53,31 +50,6 @@ public class OldCryptKey {
 
     }
 
-    private static String getBase64EncodedKey(InputStream inputStream) throws Exception {
-        StringBuilder result = new StringBuilder(4000);
-
-        Reader reader = new InputStreamReader(inputStream);
-        BufferedReader br = new BufferedReader(reader);
-        try {
-            while (true) {
-                String line = br.readLine();
-                if (line == null || line.isEmpty()) {
-                    return result.toString();
-                }
-
-                if (!line.startsWith("-") && !line.startsWith("#")) {
-                    result.append(line);
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-            return null;
-        } finally {
-            br.close();
-        }
-
-
-    }
 
     public static byte[] decryptLicense(String licenseStr, Key publicKey) {
         byte[] decodedBytes = null;
