@@ -9,6 +9,7 @@ import java.security.Key;
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
+import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 
@@ -42,8 +43,8 @@ public class MyCryptKey {
     public Key getPrivateKey() {
         try {
             KeyFactory keyFactory = KeyFactory.getInstance("RSA");
-            X509EncodedKeySpec privateKeySpec = new X509EncodedKeySpec(localKeyBytes);
-            return keyFactory.generatePublic(privateKeySpec);
+            PKCS8EncodedKeySpec privateKeySpec = new PKCS8EncodedKeySpec(localKeyBytes);
+            return keyFactory.generatePrivate(privateKeySpec);
         } catch (NoSuchAlgorithmException | InvalidKeySpecException e) {
             e.printStackTrace();
         }

@@ -4,10 +4,7 @@
     <list default="true" id="5b529324-55b5-43df-9ff5-f04fd95869f0" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/MyCryptKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/MyCryptKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/OldCryptKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/OldCryptKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/keys/FakeLicense.key" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/keys/FakeLicense.key" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +243,7 @@
       <workItem from="1580292972622" duration="9187000" />
       <workItem from="1580312452195" duration="9129000" />
       <workItem from="1580371096886" duration="1267000" />
-      <workItem from="1580372398600" duration="4310000" />
+      <workItem from="1580372398600" duration="4729000" />
     </task>
     <servers />
   </component>
@@ -286,22 +283,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="328" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580301280195" />
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1580376561996">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1580377230139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580376561996" />
-    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1580376561996">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580377230139" />
+    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1580377230139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580376561996" />
-    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1580376561996">
+    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580377230139" />
+    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1580377230138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580376561996" />
-    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1580376561996">
+    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580377230138" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1580377230139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580376561996" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580377230139" />
     <state width="1877" height="354" key="GridCell.Tab.1.bottom" timestamp="1580376334650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

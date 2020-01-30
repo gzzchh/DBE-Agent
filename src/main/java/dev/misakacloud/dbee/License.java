@@ -249,77 +249,77 @@ public class License {
     }
 
     public String getEncryptLicense(Key key) throws Exception {
-        byte[] encryptedLicenseData = new byte[this.licenseFormat.getEncryptedLength()];
+        byte[] licenseData = new byte[this.licenseFormat.getEncryptedLength()];
 
         int offset = 0;
         // 计算许可类型
-        encryptedLicenseData[offset] = (byte) this.licenseFormat.ordinal();
+        licenseData[offset] = (byte) this.licenseFormat.ordinal();
         // 移动偏移
         offset += 1;
         //计算许可ID
 //        this.licenseId = (new String(encryptedLicenseData, offset, 16)).trim();
-        Convert.copyStringBytes(encryptedLicenseData, offset, this.licenseId, 16);
+        Convert.copyStringBytes(licenseData, offset, this.licenseId, 16);
         // 移动偏移
         offset += 16;
         // 计算许可类型
 //        this.licenseType = LMLicenseType.valueOf(encryptedLicenseData[offset]);
-        encryptedLicenseData[offset] = (byte) this.licenseType.ordinal();
+        licenseData[offset] = (byte) this.licenseType.ordinal();
         // 移动偏移
         ++offset;
         //计算签发时间
 //        this.licenseIssueTime = Convert.getDateFromBytes(encryptedLicenseData, offset);
-        Convert.copyDateBytes(encryptedLicenseData, offset, this.licenseIssueTime);
+        Convert.copyDateBytes(licenseData, offset, this.licenseIssueTime);
         // 移动偏移
         offset += 8;
         // 计算起始时间
 //        this.licenseStartTime = Convert.getDateFromBytes(encryptedLicenseData, offset);
-        Convert.copyDateBytes(encryptedLicenseData, offset, this.licenseStartTime);
+        Convert.copyDateBytes(licenseData, offset, this.licenseStartTime);
         // 移动偏移
         offset += 8;
 //        this.licenseEndTime = Convert.getDateFromBytes(encryptedLicenseData, offset);
-        Convert.copyDateBytes(encryptedLicenseData, offset, this.licenseEndTime);
+        Convert.copyDateBytes(licenseData, offset, this.licenseEndTime);
         // 移动偏移
         offset += 8;
         // 计算Flag
 //        this.flags = Convert.bytesToLong(encryptedLicenseData, offset);
-        Convert.copyLongBytes(encryptedLicenseData, offset, this.flags, 8);
+        Convert.copyLongBytes(licenseData, offset, this.flags, 8);
         // 移动偏移
         offset += 8;
         // 计算产品ID
 //        this.productId = (new String(encryptedLicenseData, offset, 16)).trim();
-        Convert.copyStringBytes(encryptedLicenseData, offset, this.productId, 16);
+        Convert.copyStringBytes(licenseData, offset, this.productId, 16);
         offset += 16;
 //        this.productVersion = (new String(encryptedLicenseData, offset, 8)).trim();
-        Convert.copyStringBytes(encryptedLicenseData, offset, this.productVersion, 8);
+        Convert.copyStringBytes(licenseData, offset, this.productVersion, 8);
         offset += 8;
 //        this.ownerId = (new String(encryptedLicenseData, offset, 16)).trim();
-        Convert.copyStringBytes(encryptedLicenseData, offset, this.ownerId, 16);
+        Convert.copyStringBytes(licenseData, offset, this.ownerId, 16);
         offset += 16;
 //        this.ownerCompany = (new String(encryptedLicenseData, offset, 64)).trim();
-        Convert.copyStringBytes(encryptedLicenseData, offset, this.ownerCompany, 64);
+        Convert.copyStringBytes(licenseData, offset, this.ownerCompany, 64);
 
         offset += 64;
         if (this.licenseFormat == LMLicenseFormat.STANDARD) {
 //            this.ownerName = (new String(encryptedLicenseData, offset, 64)).trim();
-            Convert.copyStringBytes(encryptedLicenseData, offset, this.ownerName, 64);
+            Convert.copyStringBytes(licenseData, offset, this.ownerName, 64);
 
             offset += 64;
         } else {
 //            this.ownerName = (new String(encryptedLicenseData, offset, 32)).trim();
-            Convert.copyStringBytes(encryptedLicenseData, offset, this.ownerName, 32);
+            Convert.copyStringBytes(licenseData, offset, this.ownerName, 32);
             offset += 32;
 //            this.ownerEmail = (new String(encryptedLicenseData, offset, 48)).trim();
-            Convert.copyStringBytes(encryptedLicenseData, offset, this.ownerEmail, 32);
+            Convert.copyStringBytes(licenseData, offset, this.ownerEmail, 32);
 
             offset += 48;
 //            this.yearsNumber = encryptedLicenseData[offset++];
-            encryptedLicenseData[offset++] = this.yearsNumber;
+            licenseData[offset++] = this.yearsNumber;
 //            if (this.yearsNumber <= 0) {
 //                this.yearsNumber = 1;
 //            }
 
 //            this.reserved1 = encryptedLicenseData[offset++];
-            encryptedLicenseData[offset++] = this.reserved1;
+            licenseData[offset++] = this.reserved1;
 //            this.usersNumber = Convert.bytesToShort(encryptedLicenseData, offset);
 //            if (this.usersNumber <= 0) {
 //                this.usersNumber = 1;
@@ -331,7 +331,7 @@ public class License {
         try {
             Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
             cipher.init(Cipher.ENCRYPT_MODE, key);
-            encodedLicenseBytes = cipher.doFinal(encryptedLicenseData);
+            encodedLicenseBytes = cipher.doFinal(licenseData);
         } catch (IllegalBlockSizeException | BadPaddingException | NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException e) {
             e.printStackTrace();
         }
