@@ -13,7 +13,7 @@ import java.util.jar.JarFile;
 
 public class OldCryptKey {
     public static Key getKey() throws Exception {
-        String keyJarPath = findJarPath("com.dbeaver.ee.runtime");
+        String keyJarPath = findJarPath("com.dbeaver.ee.runtime_");
         InputStream in = loadResourceFromJarFile(keyJarPath, "keys/dbeaver-ee-public.key");
         byte[] keyBytes = KeyLoader.loadKeyBytesFromStream(in);
         X509EncodedKeySpec keySpec = new X509EncodedKeySpec(keyBytes);
@@ -39,14 +39,19 @@ public class OldCryptKey {
         }
     }
 
-    private static String findJarPath(String prefix) {
+    public static String findJarPath(String prefix) {
         File dir = new File("plugins/");
         String[] fileNameList = dir.list();
         if (fileNameList != null) {
-            return "plugins/" + fileNameList[0];
+            for (String filename : fileNameList) {
+                if (filename.startsWith(prefix)) {
+                    return "plugins/" + filename;
+                } else {
+                }
+            }
         } else {
             return null;
         }
-
+        return null;
     }
 }

@@ -42,6 +42,12 @@ dependencies {
     compile group: 'net.bytebuddy', name: 'byte-buddy', version: '1.10.7'
     // https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent
     testCompile group: 'net.bytebuddy', name: 'byte-buddy-agent', version: '1.10.7'
+    // https://mvnrepository.com/artifact/net.lingala.zip4j/zip4j
+    compile group: 'net.lingala.zip4j', name: 'zip4j', version: '2.3.1'
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+
+
 
 
 
