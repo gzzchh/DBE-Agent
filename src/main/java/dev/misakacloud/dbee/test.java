@@ -10,11 +10,12 @@ import javax.crypto.NoSuchPaddingException;
 import java.security.InvalidKeyException;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
+import java.security.PublicKey;
 import java.util.Base64;
 
 public class test {
-    public static Key getPublicKey(String key) throws Exception {
-        return new MyCryptKey().getPublicKey();
+    public static PublicKey getPublicKey(String key) throws Exception {
+        return (PublicKey) new MyCryptKey().getPublicKey();
 //        return new MyCryptKey().getPublicKey();
     }
 

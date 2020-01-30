@@ -24,11 +24,13 @@ public class Main {
         }
         License licObj = new License(licenseString, publicKey);
         String licInfo = licObj.toString();
-        System.out.println(licInfo);
+//        System.out.println(licInfo);
         licObj.setLicenseType(LMLicenseType.ULTIMATE);
         licObj.setLicenseEndTime(new Date(1893427200000L));
         licObj.setYearsNumber((byte) 10);
         licObj.setOwnerName("MisakaCloud");
+        licObj.setOwnerEmail("xjdzch@126.com");
+        System.out.println(licObj.getEncryptLicense(new MyCryptKey().getPrivateKey()));
 //        licObj.setFlags(1);
 //        new MyCryptKey().getPublicKey();
 //        String newLic = licObj.getEncryptLicense(new MyCryptKey().getPrivateKey());

@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+//    id 'net.bytebuddy.byte-buddy-gradle-plugin' version 'LATEST'
 }
 
 group 'dev.misakacloud'
@@ -33,6 +34,12 @@ dependencies {
     compile group: 'org.javassist', name: 'javassist', version: '3.26.0-GA'
     // https://mvnrepository.com/artifact/org.apache.bcel/bcel
     compile group: 'org.apache.bcel', name: 'bcel', version: '6.4.1'
+    // https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy
+    compile group: 'net.bytebuddy', name: 'byte-buddy', version: '1.10.7'
+    // https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent
+    testCompile group: 'net.bytebuddy', name: 'byte-buddy-agent', version: '1.10.7'
+
+
 
 
 
