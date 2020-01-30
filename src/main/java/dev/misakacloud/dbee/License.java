@@ -4,10 +4,9 @@ import dev.misakacloud.dbee.enums.LMLicenseFormat;
 import dev.misakacloud.dbee.enums.LMLicenseType;
 import dev.misakacloud.dbee.enums.LMStatusDetails;
 import dev.misakacloud.dbee.utils.Convert;
-import dev.misakacloud.dbee.utils.Crypt;
+import dev.misakacloud.dbee.utils.OldCryptKey;
 
 import java.security.Key;
-import java.sql.Connection;
 import java.util.Date;
 
 public class License {
@@ -32,7 +31,7 @@ public class License {
 
 
     public License(String licenseString, Key key) throws Exception {
-        byte[] data = Crypt.decryptLicense(licenseString, key);
+        byte[] data = OldCryptKey.decryptLicense(licenseString, key);
         int offset = 0;
         this.licenseFormat = LMLicenseFormat.STANDARD;
 
@@ -320,7 +319,7 @@ public class License {
 //            }
             offset += 2;
         }
-        String encryptedLicense = Crypt.encryptLicense(encryptedLicenseData, key);
+        String encryptedLicense = OldCryptKey.encryptLicense(encryptedLicenseData, key);
         return encryptedLicense;
 
     }

@@ -1,14 +1,12 @@
 package dev.misakacloud.dbee;
 
 import java.security.Key;
-import java.util.Base64;
 import java.util.Date;
 
 import dev.misakacloud.dbee.enums.LMLicenseType;
-import dev.misakacloud.dbee.utils.Crypt;
-import dev.misakacloud.dbee.utils.CryptKey;
+import dev.misakacloud.dbee.utils.MyCryptKey;
 
-import static dev.misakacloud.dbee.utils.Crypt.*;
+import static dev.misakacloud.dbee.utils.OldCryptKey.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -32,7 +30,7 @@ public class Main {
         licObj.setLicenseEndTime(new Date(1893427200000L));
         licObj.setYearsNumber((byte) 10);
 //        licObj.setFlags(1);
-        String newLic = licObj.getEncryptLicense(new CryptKey().getPrivateKey());
+        String newLic = licObj.getEncryptLicense(new MyCryptKey().getPrivateKey());
         System.out.println(newLic);
         licInfo = licObj.toString();
         System.out.println(licInfo);

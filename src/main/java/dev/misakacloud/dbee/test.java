@@ -1,6 +1,8 @@
 package dev.misakacloud.dbee;
 
 
+import dev.misakacloud.dbee.utils.MyCryptKey;
+
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
@@ -12,8 +14,8 @@ import java.util.Base64;
 
 public class test {
     public static Key getPublicKey(String key) throws Exception {
-        return new dev.misakacloud.dbee.utils.CryptKey().getPublicKey();
-//        return new CryptKey().getPublicKey();
+        return new MyCryptKey().getPublicKey();
+//        return new MyCryptKey().getPublicKey();
     }
 
     public static void main(String[] args) throws Exception {

@@ -11,11 +11,11 @@ import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.X509EncodedKeySpec;
 
-public class CryptKey {
+public class MyCryptKey {
     public byte[] localKeyBytes;
 
 
-    public CryptKey() throws Exception {
+    public MyCryptKey() throws Exception {
         String resourceName = "keys/FakeLicense.key";
         URL keyURL = this.getClass().getClassLoader().getResource(resourceName);
         try {
@@ -28,7 +28,7 @@ public class CryptKey {
 
     public static byte[] getStreamBytes(InputStream is) throws Exception {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        byte[] buffer = new byte[1024];
+        byte[] buffer = new byte[2048];
         int len = 0;
         while ((len = is.read(buffer)) != -1) {
             baos.write(buffer, 0, len);

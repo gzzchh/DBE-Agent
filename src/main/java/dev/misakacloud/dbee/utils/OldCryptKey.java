@@ -11,7 +11,7 @@ import java.util.Base64;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
-public class Crypt {
+public class OldCryptKey {
     public static Key getKey() throws Exception {
         String keyJarPath = findJarPath("com.dbeaver.ee.runtime");
         InputStream in = loadResourceFromJarFile(keyJarPath, "keys/dbeaver-ee-public.key");
