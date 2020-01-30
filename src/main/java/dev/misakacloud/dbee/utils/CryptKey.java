@@ -8,12 +8,11 @@ import java.net.URL;
 import java.security.Key;
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;
-import java.security.PrivateKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.X509EncodedKeySpec;
 
 public class CryptKey {
-    public PrivateKey privateKeyBytes;
+    public byte[] localKeyBytes;
 
 
     public CryptKey() throws Exception {
@@ -21,10 +20,7 @@ public class CryptKey {
         URL keyURL = this.getClass().getClassLoader().getResource(resourceName);
         try {
             InputStream keyStream = keyURL.openStream();
-            byte[] keyBytes = getStreamBytes(keyStream);
-            KeyFactory keyFactory = KeyFactory.getInstance("RSA");
-            X509EncodedKeySpec privateKeySpec = new X509EncodedKeySpec(keyBytes);
-            this.privateKeyBytes = keyFactory.generatePrivate(privateKeySpec);
+            this.localKeyBytes = getStreamBytes(keyStream);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -46,18 +42,22 @@ public class CryptKey {
     public Key getPublicKey() {
         try {
             KeyFactory keyFactory = KeyFactory.getInstance("RSA");
-            X509EncodedKeySpec publicKeySpec = new X509EncodedKeySpec(this.privateKeyBytes.getEncoded());
-            Key publicKey = keyFactory.generatePublic(publicKeySpec);
-            return publicKey;
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        } catch (InvalidKeySpecException e) {
+            X509EncodedKeySpec publicKeySpec = new X509EncodedKeySpec(localKeyBytes);
+            return keyFactory.generatePublic(publicKeySpec);
+        } catch (NoSuchAlgorithmException | InvalidKeySpecException e) {
             e.printStackTrace();
         }
         return null;
     }
 
     public Key getPrivateKey() {
-        return this.getPrivateKey();
+        try {
+            KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+            X509EncodedKeySpec privateKeySpec = new X509EncodedKeySpec(localKeyBytes);
+            return keyFactory.generatePublic(privateKeySpec);
+        } catch (NoSuchAlgorithmException | InvalidKeySpecException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

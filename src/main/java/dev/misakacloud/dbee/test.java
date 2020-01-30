@@ -1,23 +1,19 @@
 package dev.misakacloud.dbee;
 
 
-import dev.misakacloud.dbee.utils.CryptKey;
-
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
-import java.io.File;
-import java.security.*;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.X509EncodedKeySpec;
+import java.security.InvalidKeyException;
+import java.security.Key;
+import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
-import java.util.Optional;
-import java.util.stream.Stream;
 
 public class test {
     public static Key getPublicKey(String key) throws Exception {
-        return new CryptKey().getPublicKey();
+        return new dev.misakacloud.dbee.utils.CryptKey().getPublicKey();
+//        return new CryptKey().getPublicKey();
     }
 
     public static void main(String[] args) throws Exception {

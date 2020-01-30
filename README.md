@@ -34,4 +34,4 @@ VdHjehLS727GlKOKKKkZ6s9C8bt+Aw4WEhDsivOJpQt5eLUjvDLhZC0ols4R9kIXHRo1KcS5AaHy
 
 ## LicenseKeyProvider
 路径 com/dbeaver/ee/runtime/lm/DBeaverEnterpriseLM$LicenseKeyProvider  
-类名 com/dbeaver/ee/runtime/lm/DBeaverEnterpriseLM$LicenseKeyProvider 
+类名 com.dbeaver.ee.runtime.lm.DBeaverEnterpriseLM$LicenseKeyProvider 

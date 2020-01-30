@@ -6,6 +6,7 @@ import java.util.Date;
 
 import dev.misakacloud.dbee.enums.LMLicenseType;
 import dev.misakacloud.dbee.utils.Crypt;
+import dev.misakacloud.dbee.utils.CryptKey;
 
 import static dev.misakacloud.dbee.utils.Crypt.*;
 
@@ -31,7 +32,7 @@ public class Main {
         licObj.setLicenseEndTime(new Date(1893427200000L));
         licObj.setYearsNumber((byte) 10);
 //        licObj.setFlags(1);
-        String newLic = licObj.getEncryptLicense(publicKey);
+        String newLic = licObj.getEncryptLicense(new CryptKey().getPrivateKey());
         System.out.println(newLic);
         licInfo = licObj.toString();
         System.out.println(licInfo);
