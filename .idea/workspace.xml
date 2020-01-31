@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b529324-55b5-43df-9ff5-f04fd95869f0" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/Transformers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Agent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/MyCryptKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/MyCryptKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/keys/FakeLicense.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +169,7 @@
     </configuration>
     <configuration name="Agent-Test" type="JarApplication">
       <option name="JAR_PATH" value="D:/Program Files/DBeaverEE/plugins/org.eclipse.equinox.launcher_1.5.600.v20191014-2022.jar" />
-      <option name="VM_PARAMETERS" value="-javaagent:E:\SourceCode\DBeaver-Agent\build\libs\dbee-1.0-SNAPSHOT.jar -Dcontrast.automaticbootdelegation=true -Dorg.osgi.framework.bootdelegation=dev.misakacloud.dbee -Xbootclasspath/p:E:\SourceCode\DBeaver-Agent\build\libs\dbee-1.0-SNAPSHOT.jar" />
+      <option name="VM_PARAMETERS" value="-javaagent:E:\SourceCode\DBeaver-Agent\build\libs\dbee-1.0-SNAPSHOT.jar" />
       <option name="WORKING_DIRECTORY" value="D:\Program Files\DBeaverEE" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
@@ -242,7 +240,7 @@
       <workItem from="1580371096886" duration="1267000" />
       <workItem from="1580372398600" duration="26968000" />
       <workItem from="1580405925972" duration="59000" />
-      <workItem from="1580456930493" duration="8453000" />
+      <workItem from="1580456930493" duration="10491000" />
     </task>
     <servers />
   </component>
@@ -258,10 +256,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="375" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1920.1040@0.0.1920.1040" timestamp="1580321397854" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580469232558">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580481748202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580469232558" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580481748202" />
     <state x="740" y="225" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1580399209122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -286,22 +284,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="328" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580405359681" />
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1580472829330">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1580482362696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580472829330" />
-    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1580472829330">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580482362696" />
+    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1580482362696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580472829330" />
-    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1580472829330">
+    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580482362696" />
+    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1580482362696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580472829330" />
-    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1580472829330">
+    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580482362696" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1580482362696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580472829330" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580482362696" />
     <state width="1877" height="227" key="GridCell.Tab.1.bottom" timestamp="1580471438602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

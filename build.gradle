@@ -1,17 +1,15 @@
 plugins {
     id 'java'
-//    id 'net.bytebuddy.byte-buddy-gradle-plugin' version 'LATEST'
 }
 
 group 'dev.misakacloud'
-version '1.0-SNAPSHOT'
+version '1.0-Dev'
 
 sourceCompatibility = 1.8
 
 repositories {
     flatDir {
         dirs 'lib'
-        dirs 'D:\\Program Files\\DBeaverEE\\plugins'
     }
     maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
     maven{ url 'https://maven.aliyun.com/repository/jcenter'}
@@ -24,6 +22,8 @@ jar {
         attributes 'Main-Class': 'dev.misakacloud.dbee.Main'
         attributes 'Premain-Class': 'dev.misakacloud.dbee.Agent'
         attributes 'Can-Retransform-Classes': 'true'
+        attributes 'Can-Redefine-Classes': 'true'
+        attributes 'Boot-Class-Path': './'
     }
     from {
         configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
