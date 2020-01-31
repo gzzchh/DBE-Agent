@@ -18,7 +18,7 @@ public enum LMLicenseType {
     private final char id;
     private final String displayName;
 
-    private LMLicenseType(char id, String displayName) {
+    LMLicenseType(char id, String displayName) {
         this.id = id;
         this.displayName = displayName;
     }

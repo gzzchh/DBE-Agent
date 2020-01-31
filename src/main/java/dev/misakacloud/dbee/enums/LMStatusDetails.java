@@ -12,7 +12,7 @@ public class LMStatusDetails {
     private LMLicenseStatus remoteStatus;
 
     public LMStatusDetails(String message, String details, boolean valid) {
-        this(message, details, valid, (LMLicenseStatus)null);
+        this(message, details, valid, null);
     }
 
     public LMStatusDetails(String message, String details, boolean valid, LMLicenseStatus remoteStatus) {

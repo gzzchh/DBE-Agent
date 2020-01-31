@@ -261,7 +261,7 @@ public class License {
         // 移动偏移
         offset += 16;
         // 计算许可类型
-        licenseData[offset] = (byte) this.licenseType.getId();
+        licenseData[offset] = this.licenseType.getId();
         // 移动偏移
         ++offset;
         //计算签发时间

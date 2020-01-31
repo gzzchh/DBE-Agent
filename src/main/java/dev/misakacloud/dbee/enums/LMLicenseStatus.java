@@ -8,6 +8,6 @@ public enum LMLicenseStatus {
     COMPROMISED,
     BAD_CODE;
 
-    private LMLicenseStatus() {
+    LMLicenseStatus() {
     }
 }

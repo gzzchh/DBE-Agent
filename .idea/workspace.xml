@@ -3,6 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="5b529324-55b5-43df-9ff5-f04fd95869f0" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMStatusDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMStatusDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/LoadKeyInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/LoadKeyInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/Convert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/KeyLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/KeyReplacer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/MyCryptKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/MyCryptKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/OldCryptKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/OldCryptKey.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +100,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3264368" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -112,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.misakacloud.dbee.test" />
       <module name="dbee.main" />
       <extension name="coverage">
@@ -125,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DBeaver-Agent [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DBeaver-Agent [build]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -165,7 +178,7 @@
     </configuration>
     <configuration name="Agent-Test" type="JarApplication">
       <option name="JAR_PATH" value="D:/Program Files/DBeaverEE/plugins/org.eclipse.equinox.launcher_1.5.600.v20191014-2022.jar" />
-      <option name="VM_PARAMETERS" value="-javaagent:E:\SourceCode\DBeaver-Agent\build\libs\dbee-1.0-SNAPSHOT.jar -Dosgi.framework.bootdelegation=dev.misakacloud.dbee.interceptor.*" />
+      <option name="VM_PARAMETERS" value="-javaagent:E:\SourceCode\DBeaver-Agent\build\libs\dbee-1.0-SNAPSHOT.jar -Dcontrast.automaticbootdelegation=true -Dorg.osgi.framework.bootdelegation=dev.misakacloud.dbee -Xbootclasspath/p:E:\SourceCode\DBeaver-Agent\build\libs\dbee-1.0-SNAPSHOT.jar" />
       <option name="WORKING_DIRECTORY" value="D:\Program Files\DBeaverEE" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
@@ -202,12 +215,6 @@
       <item itemvalue="JAR Application.NoAgent-Debug" />
       <item itemvalue="远程.Debug-DBeaver" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.DBeaver-Agent [build]" />
-        <item itemvalue="Application.test" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -242,6 +249,7 @@
       <workItem from="1580371096886" duration="1267000" />
       <workItem from="1580372398600" duration="26968000" />
       <workItem from="1580405925972" duration="59000" />
+      <workItem from="1580456930493" duration="7194000" />
     </task>
     <servers />
   </component>
@@ -257,10 +265,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="375" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1920.1040@0.0.1920.1040" timestamp="1580321397854" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580403700122">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580469232558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580403700122" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580469232558" />
     <state x="740" y="225" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1580399209122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -277,46 +285,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#项目结构/0.0.1920.1040@0.0.1920.1040" timestamp="1580240180307" />
-    <state x="718" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580317343622">
+    <state x="718" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580471418932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1580317343622" />
+    <state x="718" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1580471418932" />
     <state x="761" y="328" key="FileChooserDialogImpl" timestamp="1580405359681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="328" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580405359681" />
-    <state width="1877" height="227" key="GridCell.Tab.0.bottom" timestamp="1580405817963">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1580471565695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580405817963" />
-    <state width="1877" height="227" key="GridCell.Tab.0.center" timestamp="1580405817963">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580471565695" />
+    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1580471565695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580405817963" />
-    <state width="1877" height="227" key="GridCell.Tab.0.left" timestamp="1580405817963">
+    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580471565695" />
+    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1580471565695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580405817963" />
-    <state width="1877" height="227" key="GridCell.Tab.0.right" timestamp="1580405817963">
+    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580471565695" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1580471565695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580405817963" />
-    <state width="1877" height="227" key="GridCell.Tab.1.bottom" timestamp="1580405817964">
+    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580471565695" />
+    <state width="1877" height="227" key="GridCell.Tab.1.bottom" timestamp="1580471438602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580405817964" />
-    <state width="1877" height="227" key="GridCell.Tab.1.center" timestamp="1580405817963">
+    <state width="1877" height="227" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580471438602" />
+    <state width="1877" height="227" key="GridCell.Tab.1.center" timestamp="1580471438602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580405817963" />
-    <state width="1877" height="227" key="GridCell.Tab.1.left" timestamp="1580405817963">
+    <state width="1877" height="227" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580471438602" />
+    <state width="1877" height="227" key="GridCell.Tab.1.left" timestamp="1580471438602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580405817963" />
-    <state width="1877" height="227" key="GridCell.Tab.1.right" timestamp="1580405817963">
+    <state width="1877" height="227" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580471438602" />
+    <state width="1877" height="227" key="GridCell.Tab.1.right" timestamp="1580471438602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580405817963" />
+    <state width="1877" height="227" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580471438602" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1580405363841">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -325,10 +333,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580239611454" />
-    <state x="658" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580405934075">
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580456931792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="658" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580405934075" />
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580456931792" />
     <state x="578" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580293615410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -354,9 +362,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/KeyReplacer.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="25" />
+          <url>file://$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/LoadKeyInterceptor.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

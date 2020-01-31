@@ -2,6 +2,7 @@ package dev.misakacloud.dbee.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -62,7 +63,7 @@ public class Convert {
 
     public static void copyStringBytes(byte[] data, int offset, String string, int length) {
         try {
-            byte[] strData = string == null ? new byte[0] : string.getBytes("utf-8");
+            byte[] strData = string == null ? new byte[0] : string.getBytes(StandardCharsets.UTF_8);
             System.arraycopy(strData, 0, data, offset, strData.length);
 
             for (int i = strData.length; i < length; ++i) {

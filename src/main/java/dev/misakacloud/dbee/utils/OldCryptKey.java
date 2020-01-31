@@ -1,11 +1,9 @@
 package dev.misakacloud.dbee.utils;
 
-import javax.crypto.BadPaddingException;
-import javax.crypto.Cipher;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.NoSuchPaddingException;
 import java.io.*;
-import java.security.*;
+import java.security.Key;
+import java.security.KeyFactory;
+import java.security.PublicKey;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 import java.util.jar.JarEntry;
@@ -15,7 +13,7 @@ public class OldCryptKey {
     public static Key getKey() throws Exception {
         String keyJarPath = findJarPath("com.dbeaver.ee.runtime_");
         InputStream in = loadResourceFromJarFile(keyJarPath, "keys/dbeaver-ee-public.key");
-        byte[] keyBytes = KeyLoader.loadKeyBytesFromStream(in);
+        byte[] keyBytes = loadKeyBytesFromStream(in);
         X509EncodedKeySpec keySpec = new X509EncodedKeySpec(keyBytes);
         KeyFactory keyFactory = KeyFactory.getInstance("RSA");
         PublicKey publicKey = keyFactory.generatePublic(keySpec);
@@ -53,5 +51,30 @@ public class OldCryptKey {
             return null;
         }
         return null;
+    }
+
+    public static byte[] loadKeyBytesFromStream(InputStream inputStream) throws IOException {
+        StringBuilder result = new StringBuilder(4000);
+        Reader reader = new InputStreamReader(inputStream);
+        BufferedReader br = new BufferedReader(reader);
+        try {
+            while (true) {
+                String line = br.readLine();
+                if (line == null || line.isEmpty()) {
+                    // 读取结束以后进行B64解码
+                    byte[] keyBytes = Base64.getDecoder().decode(result.toString());
+                    return keyBytes;
+                }
+
+                if (!line.startsWith("-") && !line.startsWith("#")) {
+                    result.append(line);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            br.close();
+        }
     }
 }

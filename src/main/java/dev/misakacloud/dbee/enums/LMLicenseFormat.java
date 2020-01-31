@@ -13,7 +13,7 @@ public enum LMLicenseFormat implements LMSerializeFormat {
     private final int encryptedLength;
     private final String description;
 
-    private LMLicenseFormat(byte id, int encryptedLength, String description) {
+    LMLicenseFormat(byte id, int encryptedLength, String description) {
         this.id = id;
         this.encryptedLength = encryptedLength;
         this.description = description;
