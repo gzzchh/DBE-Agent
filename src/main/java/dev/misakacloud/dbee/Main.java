@@ -24,13 +24,16 @@ public class Main {
         }
         License licObj = new License(licenseString, publicKey);
         String licInfo = licObj.toString();
-//        System.out.println(licInfo);
         licObj.setLicenseType(LMLicenseType.ULTIMATE);
-        licObj.setLicenseId("DB-ZS1MPZT9--YUK");
+        licObj.setLicenseIssueTime(new Date());
+        licObj.setLicenseStartTime(new Date());
+        licObj.setLicenseId("DB-随便啦");
         licObj.setLicenseEndTime(new Date(1893427200000L));
         licObj.setYearsNumber((byte) 10);
-        licObj.setOwnerName("MisakaCloud");
-        licObj.setOwnerEmail("xjdzch@126.com");
+        licObj.setOwnerName("是你的名字");
+        licObj.setOwnerEmail("你看不到我~");
+        System.out.println("-- DBeaver EE LICENSE - " + licObj.getLicenseId());
+        System.out.println("-- Issued at " + licObj.getLicenseIssueTime().toString() + " to " + licObj.getOwnerName() + " //");
         System.out.println(licObj.getEncryptLicense(new MyCryptKey().getPrivateKey()));
 //        licObj.setFlags(1);
 //        new MyCryptKey().getPublicKey();

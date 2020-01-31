@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b529324-55b5-43df-9ff5-f04fd95869f0" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/CheckCustomerInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/CheckLicenseInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/PingCheckInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Agent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/NetworkCheckAdvicer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/Transformers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/Transformers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,7 @@
       <recent name="E:\SourceCode\DBeaver-Agent" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.Agent-Test">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.misakacloud.dbee.Main" />
       <module name="dbee.main" />
@@ -244,7 +242,7 @@
       <workItem from="1580371096886" duration="1267000" />
       <workItem from="1580372398600" duration="26968000" />
       <workItem from="1580405925972" duration="59000" />
-      <workItem from="1580456930493" duration="17685000" />
+      <workItem from="1580456930493" duration="18988000" />
     </task>
     <servers />
   </component>
@@ -292,22 +290,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="328" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580405359681" />
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1580490863476">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1580491951164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580490863476" />
-    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1580490863476">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580491951164" />
+    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1580491951164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580490863476" />
-    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1580490863476">
+    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580491951164" />
+    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1580491951164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580490863476" />
-    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1580490863476">
+    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580491951164" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1580491951164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580490863476" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580491951164" />
     <state width="1877" height="227" key="GridCell.Tab.1.bottom" timestamp="1580490779473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

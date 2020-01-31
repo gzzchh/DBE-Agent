@@ -13,17 +13,7 @@ public class Agent {
 
     public static void premain(String agentArgs, Instrumentation inst) {
         System.out.println("===============DBeaver-EE Agent===============");
-        System.out.println("Starting Local License Server");
-//        LicenseServer licenseServer = new LicenseServer(3265);
-//        licenseServer.addHandler();
-//        try {
-//            licenseServer.start();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-        System.out.println("本地许可服务器启动成功");
         System.out.println("开始进行类替换");
-
         AgentBuilder.Listener listener = new AgentBuilder.Listener() {
             @Override
             public void onDiscovery(String typeName, ClassLoader classLoader, JavaModule module, boolean loaded) {
@@ -66,6 +56,7 @@ public class Agent {
                 .transform(Transformers.networkCheckTransformer)
                 .with(listener)
                 .installOn(inst);
+        System.out.println("验证返回结果修改完成,启动程序");
 
     }
 
