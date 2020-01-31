@@ -1,9 +1,7 @@
 package dev.misakacloud.dbee;
 
-import dev.misakacloud.dbee.interceptor.NetworkCheckAdvicer;
 import dev.misakacloud.dbee.interceptor.Transformers;
 import net.bytebuddy.agent.builder.AgentBuilder;
-import net.bytebuddy.asm.Advice;
 import net.bytebuddy.description.type.TypeDescription;
 import net.bytebuddy.dynamic.DynamicType;
 import net.bytebuddy.matcher.ElementMatchers;
@@ -60,16 +58,15 @@ public class Agent {
                 .with(listener)
                 .installOn(inst);
         System.out.println("解密密钥获取已经劫持");
-        System.out.println("准备修改验证地址");
-        // ElementMatchers.nameContains("com.dbeaver.lm.validate.PublicServiceClient")
-        new AgentBuilder.Default()
-                .with(new AgentBuilder.InitializationStrategy.SelfInjection.Eager())
-                .with(AgentBuilder.InstallationListener.StreamWriting.toSystemOut())
-                .type(ElementMatchers.nameContains("com.dbeaver.lm.validate.PublicServiceClient"))
-                .transform((builder, typeDescription, classLoader, module) ->
-                        builder.visit(Advice.to(NetworkCheckAdvicer.class)
-                                .on(ElementMatchers.isConstructor())))
+        System.out.println("准备修改验证结果");
+        // 验证结果修改
+        new AgentBuilder
+                .Default()
+                .type(ElementMatchers.nameContains("com.dbeaver.lm.validate.PublicServiceClient")) // 指定需要拦截的类
+                .transform(Transformers.networkCheckTransformer)
+                .with(listener)
                 .installOn(inst);
+
     }
 
 
