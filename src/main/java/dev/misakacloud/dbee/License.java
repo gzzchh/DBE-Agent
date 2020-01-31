@@ -19,7 +19,7 @@ import java.util.Date;
 public class License {
     private byte[] decrypted;
     private String licenseId;
-    private dev.misakacloud.dbee.enums.LMLicenseType licenseType;
+    private LMLicenseType licenseType;
     private Date licenseIssueTime;
     private Date licenseStartTime;
     private Date licenseEndTime;
