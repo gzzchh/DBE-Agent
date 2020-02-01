@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <request license="utilmate" productId="dbeaver-ee" productVersion="6.3">
-<customer email="宁の邮箱" firstName="XXX" lastName="XXX" company="">
-</customer>
+	<customer email="宁の邮箱" firstName="XXX" lastName="XXX" company=""></customer>
 </request>
