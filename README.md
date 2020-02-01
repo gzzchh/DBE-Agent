@@ -25,8 +25,8 @@ VdHjehLS727GlKOKKKkZ6s9C8bt+Aw4WEhDsivOJpQt5eLUjvDLhZC0ols4R9kIXHRo1KcS5AaHy
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<request license="trial" productId="dbeaver-ee" productVersion="6.3">
-	<customer email="1656154710@qq.com" firstName="Mr" lastName="Wu" company=""></customer>
+<request license="utilmate" productId="dbeaver-ee" productVersion="6.3">
+	<customer email="宁の邮箱" firstName="XXX" lastName="XXX" company=""></customer>
 </request>
 ```
 
