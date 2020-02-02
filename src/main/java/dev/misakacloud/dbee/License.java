@@ -98,7 +98,7 @@ public class License {
     }
 
     public License(String licenseId, LMLicenseType licenseType, Date licenseIssueTime, Date licenseStartTime, Date licenseEndTime, long flags, String productId, String productVersion, String ownerId, String ownerCompany, String ownerName, String ownerEmail) {
-        this.licenseFormat = LMLicenseFormat.EXTENDED;
+        this.licenseFormat = LMLicenseFormat.STANDARD;
         this.licenseId = licenseId;
         this.licenseType = licenseType;
         this.licenseIssueTime = licenseIssueTime;

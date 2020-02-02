@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b529324-55b5-43df-9ff5-f04fd95869f0" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/gui/MainForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/gui/MainForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +77,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="271" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -100,13 +106,26 @@
       <recent name="E:\SourceCode\DBeaver-Agent" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.MainForm">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.misakacloud.dbee.Main" />
       <module name="dbee.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dev.misakacloud.dbee.enums.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.misakacloud.dbee.gui.MainForm" />
+      <module name="dbee.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.misakacloud.dbee.gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -203,7 +222,13 @@
       <item itemvalue="JAR Application.Agent-Test" />
       <item itemvalue="JAR Application.NoAgent-Debug" />
       <item itemvalue="远程.Debug-DBeaver" />
+      <item itemvalue="Application.MainForm" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainForm" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -240,7 +265,9 @@
       <workItem from="1580405925972" duration="59000" />
       <workItem from="1580456930493" duration="19529000" />
       <workItem from="1580542219782" duration="2193000" />
-      <workItem from="1580547886156" duration="346000" />
+      <workItem from="1580547886156" duration="950000" />
+      <workItem from="1580556465527" duration="4000" />
+      <workItem from="1580627398400" duration="4863000" />
     </task>
     <servers />
   </component>
@@ -288,22 +315,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="328" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580405359681" />
-    <state width="1877" height="227" key="GridCell.Tab.0.bottom" timestamp="1580492704130">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1580632278967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580492704130" />
-    <state width="1877" height="227" key="GridCell.Tab.0.center" timestamp="1580492704130">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580632278967" />
+    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1580632278967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580492704130" />
-    <state width="1877" height="227" key="GridCell.Tab.0.left" timestamp="1580492704130">
+    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580632278967" />
+    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1580632278967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580492704130" />
-    <state width="1877" height="227" key="GridCell.Tab.0.right" timestamp="1580492704130">
+    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580632278967" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1580632278967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580492704130" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580632278967" />
     <state width="1877" height="227" key="GridCell.Tab.1.bottom" timestamp="1580492704130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -324,14 +351,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580405363841" />
+    <state x="828" y="314" key="UIDesigner.ListEditorDialog" timestamp="1580629640480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="314" key="UIDesigner.ListEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580629640480" />
     <state x="759" y="297" key="chooseDestDirectoryDialog" timestamp="1580239611454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580239611454" />
-    <state x="658" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580547959517">
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580627513311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="658" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580547959517" />
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580627513311" />
     <state x="578" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580293615410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
