@@ -41,21 +41,21 @@ public class Main {
         System.out.println("-- Issued at " + licObj.getLicenseIssueTime().toString() + " to " + licObj.getOwnerName() + " //");
         System.out.println(licObj.getEncryptLicense(new MyCryptKey().getPrivateKey()));
 
-        JFrame.setDefaultLookAndFeelDecorated(true);
-        JFrame mainFrame = new JFrame("DBeaver 许可生成");
-        Container c = mainFrame.getContentPane();
-        mainFrame.setContentPane(new MainForm().mainPanel);
-        Toolkit toolkit = Toolkit.getDefaultToolkit();
-        int x = (int)(toolkit.getScreenSize().getWidth() - (double)mainFrame.getWidth()) / 2;
-        int y = (int)(toolkit.getScreenSize().getHeight() - (double)mainFrame.getHeight()) / 2;
-        mainFrame.setLocation(x, y);
-        mainFrame.setResizable(true);
-        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        c.add(new MainForm().mainPanel);
-        c.setLayout(new BoxLayout(c, BoxLayout.Y_AXIS));
-        mainFrame.setSize(600, 600);
-        mainFrame.pack();
-        mainFrame.setVisible(true);
+//        JFrame.setDefaultLookAndFeelDecorated(true);
+//        JFrame mainFrame = new JFrame("DBeaver 许可生成");
+//        Container c = mainFrame.getContentPane();
+//        mainFrame.setContentPane(new MainForm().mainPanel);
+//        Toolkit toolkit = Toolkit.getDefaultToolkit();
+//        int x = (int)(toolkit.getScreenSize().getWidth() - (double)mainFrame.getWidth()) / 2;
+//        int y = (int)(toolkit.getScreenSize().getHeight() - (double)mainFrame.getHeight()) / 2;
+//        mainFrame.setLocation(x, y);
+//        mainFrame.setResizable(true);
+//        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        c.add(new MainForm().mainPanel);
+//        c.setLayout(new BoxLayout(c, BoxLayout.Y_AXIS));
+//        mainFrame.setSize(600, 600);
+//        mainFrame.pack();
+//        mainFrame.setVisible(true);
 
 
 

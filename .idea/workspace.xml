@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b529324-55b5-43df-9ff5-f04fd95869f0" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/gui/MainForm.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/gui/MainForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +103,7 @@
       <recent name="E:\SourceCode\DBeaver-Agent" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainForm">
+  <component name="RunManager" selected="JAR Application.NoAgent-Debug">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.misakacloud.dbee.Main" />
       <module name="dbee.main" />
@@ -217,12 +214,12 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.test" />
+      <item itemvalue="Application.MainForm" />
       <item itemvalue="Gradle.DBeaver-Agent [jar]" />
       <item itemvalue="Gradle.DBeaver-Agent [build]" />
       <item itemvalue="JAR Application.Agent-Test" />
       <item itemvalue="JAR Application.NoAgent-Debug" />
       <item itemvalue="远程.Debug-DBeaver" />
-      <item itemvalue="Application.MainForm" />
     </list>
     <recent_temporary>
       <list>
@@ -268,6 +265,9 @@
       <workItem from="1580547886156" duration="950000" />
       <workItem from="1580556465527" duration="4000" />
       <workItem from="1580627398400" duration="4863000" />
+      <workItem from="1581319164911" duration="3339000" />
+      <workItem from="1581332238765" duration="393000" />
+      <workItem from="1581333409357" duration="5000" />
     </task>
     <servers />
   </component>
@@ -283,10 +283,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="375" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1920.1040@0.0.1920.1040" timestamp="1580321397854" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580489223296">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581321155286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580489223296" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581321155286" />
     <state x="740" y="225" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1580399209122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -315,22 +315,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="328" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580405359681" />
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1580632278967">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1581322507016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580632278967" />
-    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1580632278967">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581322507016" />
+    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1581322507016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580632278967" />
-    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1580632278967">
+    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581322507016" />
+    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1581322507015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580632278967" />
-    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1580632278967">
+    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581322507015" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1581322507016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580632278967" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581322507016" />
     <state width="1877" height="227" key="GridCell.Tab.1.bottom" timestamp="1580492704130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -359,10 +359,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580239611454" />
-    <state x="658" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580627513311">
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581333410670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="658" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580627513311" />
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581333410670" />
     <state x="578" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580293615410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
