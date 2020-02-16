@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5b529324-55b5-43df-9ff5-f04fd95869f0" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/lib/com.dbeaver.ee.runtime_2.0.51.201912081802.jar!/com/dbeaver/ee/runtime/lm/DBeaverEnterpriseLM.class&#10;E:/SourceCode/DBeaver-Agent/lib/org.jkiss.lm_1.0.75.201912081802.jar!/org/jkiss/lm/LMEncryption.class&#10;E:/SourceCode/DBeaver-Agent/lib/com.dbeaver.lm.ui_2.0.51.201912081802.jar!/com/dbeaver/lm/ui/LicenseImportDialog.class&#10;E:/SourceCode/DBeaver-Agent/lib/com.dbeaver.lm.core_2.0.51.201912081802.jar!/com/dbeaver/lm/validate/PublicServiceClient.class&#10;E:/SourceCode/DBeaver-Agent/lib/idea.jar!/org/jetbrains/rsa/RSADecoder.class" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums" />
-    <property name="last_opened_file_path" value="D:/Program Files/DBeaverEE/plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="模块" />
@@ -268,6 +266,7 @@
       <workItem from="1581319164911" duration="3339000" />
       <workItem from="1581332238765" duration="393000" />
       <workItem from="1581333409357" duration="5000" />
+      <workItem from="1581866576296" duration="1281000" />
     </task>
     <servers />
   </component>
@@ -359,10 +358,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580239611454" />
-    <state x="658" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581333410670">
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581866575659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="658" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581333410670" />
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581866575659" />
     <state x="578" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580293615410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
