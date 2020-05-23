@@ -20,8 +20,8 @@ GcEVPtVH+fzyCX3Jw/b2iDGHIYe20IwwGGzvCaSvgN+SOLyeOfmhTgIXkhhuJsCi7Ov/7Sy2Hpk3
 VdHjehLS727GlKOKKKkZ6s9C8bt+Aw4WEhDsivOJpQt5eLUjvDLhZC0ols4R9kIXHRo1KcS5AaHy
 8EWhdiuxPOJdHTR01waJUvb4RdH8Ldi2m2CNB93sv1OTMvzoDX1oWUnWGN8mL7K0UU+3ksy06a0O
 /AU8wueD1yaXHQp9OML5WmBDZapiuSKoQUH/dPhu6C7XRj1EAiTueNibb9rSfbhlUYKgA/1is4nW
-42xwiN3+jzQrBYO1NQIYAlGHxlsJ0+IxqVLHCw==
-请求格式
+42xwiN3+jzQrBYO1NQIYAlGHxlsJ0+IxqVLHCw==  
+请求格式  
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
