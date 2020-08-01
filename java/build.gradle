@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'dev.misakacloud'
-version '1.0-Dev'
+version ''
 
 sourceCompatibility = 1.8
 
@@ -24,7 +24,7 @@ jar {
         attributes 'Premain-Class': 'dev.misakacloud.dbee.Agent'
         attributes 'Can-Retransform-Classes': 'true'
         attributes 'Can-Redefine-Classes': 'true'
-        attributes 'Boot-Class-Path': 'dbee-1.0-Dev.jar'
+        attributes 'Boot-Class-Path': 'dbeaver-agent.jar'
     }
     from {
         configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
