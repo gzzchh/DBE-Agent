@@ -29,13 +29,15 @@ public class Main {
         License licObj = new License(licenseString, publicKey);
         String licInfo = licObj.toString();
         licObj.setLicenseType(LMLicenseType.ULTIMATE);
+        licObj.setProductId("dbeaver-ee");
+        licObj.setProductVersion("114.514");
         licObj.setLicenseIssueTime(new Date());
         licObj.setLicenseStartTime(new Date());
-        licObj.setLicenseId("DB-随便啦");
+        licObj.setLicenseId("DB-114514");
         licObj.setLicenseEndTime(new Date(1893427200000L));
         licObj.setYearsNumber((byte) 10);
-        licObj.setOwnerName("是你的名字");
-        licObj.setOwnerEmail("你看不到我~");
+        licObj.setOwnerName("MisakaCloud");
+        licObj.setOwnerEmail("admin@misakacloud.cn");
         System.out.println(licInfo);
         System.out.println("-- DBeaver EE LICENSE - " + licObj.getLicenseId());
         System.out.println("-- Issued at " + licObj.getLicenseIssueTime().toString() + " to " + licObj.getOwnerName() + " //");
