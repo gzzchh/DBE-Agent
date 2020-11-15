@@ -1,9 +1,10 @@
 package dev.misakacloud.dbee;
 
-import dev.misakacloud.dbee.interceptor.Transformers;
+import dev.misakacloud.dbee.interceptor.*;
 import net.bytebuddy.agent.builder.AgentBuilder;
 import net.bytebuddy.description.type.TypeDescription;
 import net.bytebuddy.dynamic.DynamicType;
+import net.bytebuddy.implementation.MethodDelegation;
 import net.bytebuddy.matcher.ElementMatchers;
 import net.bytebuddy.utility.JavaModule;
 
@@ -11,7 +12,14 @@ import java.lang.instrument.Instrumentation;
 
 public class Agent {
 
-    public static void premain(String agentArgs, Instrumentation inst) {
+    public static void premain(String arg, Instrumentation inst) {
+        install(arg, inst);
+    }
+
+    public static void agentmain(String arg, Instrumentation inst) {
+        install(arg, inst);
+    }
+    public static void install(String agentArgs, Instrumentation inst) {
         System.out.println("===============DBeaver-EE Agent===============");
         System.out.println("开始进行类替换");
         AgentBuilder.Listener listener = new AgentBuilder.Listener() {
@@ -44,8 +52,9 @@ public class Agent {
         new AgentBuilder
                 .Default()
                 .type(ElementMatchers.nameContains("com.dbeaver.ee.runtime.lm.DBeaverEnterpriseLM")) // 指定需要拦截的类
-                .transform(Transformers.loadKeyTransformer)
-                .with(listener)
+                .transform((builder, type, classLoader, module) -> builder
+                        .method(ElementMatchers.named("getDecryptionKey"))
+                        .intercept(MethodDelegation.to(LoadKeyInterceptor.class)))
                 .installOn(inst);
         System.out.println("解密密钥获取已经劫持");
         System.out.println("准备修改验证结果");
@@ -53,7 +62,15 @@ public class Agent {
         new AgentBuilder
                 .Default()
                 .type(ElementMatchers.nameContains("com.dbeaver.lm.validate.PublicServiceClient")) // 指定需要拦截的类
-                .transform(Transformers.networkCheckTransformer)
+                .transform((builder, type, classLoader, module) -> builder
+                        .method(ElementMatchers.named("ping"))
+                        .intercept(MethodDelegation.to(PingCheckInterceptor.class))
+                        // 拦截 checkCustomerEmail 方法
+                        .method(ElementMatchers.named("checkCustomerEmail"))
+                        .intercept(MethodDelegation.to(CheckCustomerInterceptor.class))
+                        // 拦截 checkLicenseStatus 方法
+                        .method(ElementMatchers.named("checkLicenseStatus"))
+                        .intercept(MethodDelegation.to(CheckLicenseInterceptor.class)))
                 .with(listener)
                 .installOn(inst);
         System.out.println("验证返回结果修改完成,启动程序");

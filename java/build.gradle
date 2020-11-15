@@ -1,17 +1,22 @@
-plugins {
-    id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.3.61'
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:6.1.0'
+
+    }
 }
 
+apply plugin: 'com.github.johnrengelman.shadow'
+apply plugin: 'java'
 group 'dev.misakacloud'
 version ''
 
 sourceCompatibility = 1.8
 
 repositories {
-    flatDir {
-        dirs 'lib'
-    }
     maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
     maven{ url 'https://maven.aliyun.com/repository/jcenter'}
     maven{ url 'https://maven.aliyun.com/repository/central'}
@@ -24,42 +29,22 @@ jar {
         attributes 'Premain-Class': 'dev.misakacloud.dbee.Agent'
         attributes 'Can-Retransform-Classes': 'true'
         attributes 'Can-Redefine-Classes': 'true'
-        attributes 'Boot-Class-Path': 'dbeaver-agent.jar'
+        attributes 'Boot-Class-Path': 'dbeaver-agent-all.jar'
     }
     from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+//        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
     }
 
 }
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile fileTree(include: ['*.jar'], dir: 'lib')
-//    compile fileTree(include: ['*.jar'], dir: 'D:\\Program Files\\DBeaverEE\\plugins')
-    // https://mvnrepository.com/artifact/org.javassist/javassist
-    compile group: 'org.javassist', name: 'javassist', version: '3.26.0-GA'
-    // https://mvnrepository.com/artifact/org.apache.bcel/bcel
-    compile group: 'org.apache.bcel', name: 'bcel', version: '6.4.1'
-    // https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy
-    compile group: 'net.bytebuddy', name: 'byte-buddy', version: '1.10.7'
-    // https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent
-    compile group: 'net.bytebuddy', name: 'byte-buddy-agent', version: '1.10.7'
-    // https://mvnrepository.com/artifact/net.lingala.zip4j/zip4j
-    compile group: 'net.lingala.zip4j', name: 'zip4j', version: '2.3.1'
-    // https://mvnrepository.com/artifact/commons-io/commons-io
-    compile group: 'commons-io', name: 'commons-io', version: '2.6'
-    // https://mvnrepository.com/artifact/org.xeustechnologies/jcl-core
-    compile group: 'org.xeustechnologies', name: 'jcl-core', version: '2.8'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.66'
+    compile group: 'net.bytebuddy', name: 'byte-buddy-agent', version: '1.10.18'
+    compile group: 'net.bytebuddy', name: 'byte-buddy', version: '1.10.18'
+    compileOnly fileTree(include: ['*.jar'], dir: 'libs')
 
 
 }
-compileKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-}
-compileTestKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
+shadowJar{
+    archiveFileName = "dbeaver-agent-all.jar"
 }
