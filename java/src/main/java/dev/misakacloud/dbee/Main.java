@@ -1,16 +1,12 @@
 package dev.misakacloud.dbee;
 
-import java.awt.*;
+import dev.misakacloud.dbee.enums.LMLicenseType;
+import dev.misakacloud.dbee.utils.MyCryptKey;
+
 import java.security.Key;
 import java.util.Date;
 
-import dev.misakacloud.dbee.enums.LMLicenseType;
-import dev.misakacloud.dbee.gui.MainForm;
-import dev.misakacloud.dbee.utils.MyCryptKey;
-
-import javax.swing.*;
-
-import static dev.misakacloud.dbee.utils.OldCryptKey.*;
+import static dev.misakacloud.dbee.utils.OldCryptKey.getKey;
 
 public class Main {
     public static void main(String[] args) throws Exception {
