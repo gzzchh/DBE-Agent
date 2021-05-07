@@ -5,18 +5,23 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 plugins {
     kotlin("jvm") version "1.3.72"
     id("java")
-    id("com.github.johnrengelman.shadow") version "6.1.0"
+    id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 
 repositories {
     mavenCentral()
+    flatDir {
+        dirs("libs")
+    }
+
 }
 
 dependencies {
-    testImplementation("junit:junit:4.12")
-    implementation("net.bytebuddy:byte-buddy-agent:1.10.18")
-    implementation("net.bytebuddy:byte-buddy:1.10.18")
-    compileOnly(
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.1")
+    implementation("net.bytebuddy:byte-buddy-agent:1.11.0")
+    implementation("net.bytebuddy:byte-buddy:1.11.0")
+    implementation(
             fileTree(
                     // libs 就是文件夹名字
                     mapOf("dir" to "libs", "include" to listOf("*.jar"))
@@ -28,7 +33,7 @@ tasks {
     withType<Jar> {
         // Otherwise you'll get a "No main manifest attribute" error
         manifest {
-            attributes["Main-Class"] = "dev.misakacloud.dbee.Main"
+//            attributes["Main-Class"] = "dev.misakacloud.dbee.Main"
             attributes["Premain-Class"] = "dev.misakacloud.dbee.Agent"
             attributes["Can-Retransform-Classes"] = "true"
             attributes["Can-Redefine-Classes"] = "true"

@@ -4,35 +4,157 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d102c28-3afb-4574-9856-5a155edc7410" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="6d102c28-3afb-4574-9856-5a155edc7410" name="默认的" comment="默认的">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/com.dbeaver.ee.runtime_2.0.81.202103102007.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/com.dbeaver.lm.core_2.0.81.202103102007.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/org.jkiss.lm_1.0.105.202103102007.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/org.jkiss.utils_2.1.135.202103102007.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dev/misakacloud/dbee/UltimateLicense.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/DBeaver-Agent.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/plugins.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README-63-70.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/misakacloud/dbee/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/enums/LMLicenseFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/enums/LMLicenseStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/enums/LMLicenseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/enums/LMSerializeFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMSerializeFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/enums/LMStatusDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMStatusDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/interceptor/CheckCustomerInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/CheckCustomerInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/interceptor/CheckLicenseInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/CheckLicenseInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/interceptor/LoadKeyInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/LoadKeyInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/interceptor/PingCheckInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/PingCheckInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/utils/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/Convert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/utils/MyCryptKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/MyCryptKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/utils/OldCryptKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/OldCryptKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/resources/6.3-Trial" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/6.3-Trial" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/resources/6.3-Trial-2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/6.3-Trial-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/resources/dbeaver-ee.lic" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dbeaver-ee.lic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/resources/trial-request.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trial-request.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/com.dbeaver.ee.runtime_2.0.51.201912081802.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dbeaver-agent" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1kKO5sAjkEoenKEnHVdXmGLM9bg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle.kts" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UltimateLicense.genUltimateLicense" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;dev.misakacloud.dbee.UltimateLicense.genUltimateLicense&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.UltimateLicense.genUltimateLicense" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,10 +166,40 @@
       <updated>1605445635650</updated>
       <workItem from="1605445636814" duration="311000" />
       <workItem from="1605445961009" duration="18000" />
+      <workItem from="1620387914422" duration="17000" />
+      <workItem from="1620387940759" duration="10000" />
+      <workItem from="1620387960077" duration="19000" />
+      <workItem from="1620387993081" duration="6486000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/dev/misakacloud/dbee/UltimateLicense.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

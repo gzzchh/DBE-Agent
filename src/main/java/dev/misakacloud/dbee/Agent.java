@@ -51,7 +51,8 @@ public class Agent {
         System.out.println("准备劫持解密密钥获取");
         new AgentBuilder
                 .Default()
-                .type(ElementMatchers.nameContains("com.dbeaver.ee.runtime.lm.DBeaverEnterpriseLM")) // 指定需要拦截的类
+                // 指定需要拦截的类
+                .type(ElementMatchers.nameContains("com.dbeaver.ee.runtime.lm.DBeaverEnterpriseLM"))
                 .transform((builder, type, classLoader, module) -> builder
                         .method(ElementMatchers.named("getDecryptionKey"))
                         .intercept(MethodDelegation.to(LoadKeyInterceptor.class)))
@@ -61,7 +62,8 @@ public class Agent {
         // 验证结果修改
         new AgentBuilder
                 .Default()
-                .type(ElementMatchers.nameContains("com.dbeaver.lm.validate.PublicServiceClient")) // 指定需要拦截的类
+                // 指定需要拦截的类
+                .type(ElementMatchers.nameContains("com.dbeaver.lm.validate.PublicServiceClient"))
                 .transform((builder, type, classLoader, module) -> builder
                         .method(ElementMatchers.named("ping"))
                         .intercept(MethodDelegation.to(PingCheckInterceptor.class))

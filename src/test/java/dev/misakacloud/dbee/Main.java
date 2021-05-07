@@ -1,5 +1,6 @@
 package dev.misakacloud.dbee;
 
+import dev.misakacloud.dbee.License;
 import dev.misakacloud.dbee.enums.LMLicenseType;
 import dev.misakacloud.dbee.utils.MyCryptKey;
 
