@@ -1,5 +1,5 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 plugins {
@@ -21,12 +21,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.1")
     implementation("net.bytebuddy:byte-buddy-agent:1.11.0")
     implementation("net.bytebuddy:byte-buddy:1.11.0")
-    implementation(
-            fileTree(
-                    // libs 就是文件夹名字
-                    mapOf("dir" to "libs", "include" to listOf("*.jar"))
-            )
-    )
+    testImplementation(fileTree("libs") { include("*.jar") })
 }
 
 tasks {
@@ -40,15 +35,21 @@ tasks {
             attributes["Boot-Class-Path"] = "dbeaver-agent-all.jar"
         }
 
-        // To add all of the dependencies otherwise a "NoClassDefFoundError" error
-        from(sourceSets.main.get().output)
-        dependsOn(configurations.runtimeClasspath)
-
     }
     named<ShadowJar>("shadowJar") {
 //        archiveBaseName.set("dbeaver-agent-all.jar")
         archiveFileName.set("dbeaver-agent-all.jar")
         mergeServiceFiles()
+        dependencies {
+//            exclude {
+//
+//            }
+            exclude("/org/jkiss/**/*")
+            exclude("/com/dbeaver/**/*")
+            exclude("/research")
+//            exclude("/win32**/*.dll")
+        }
+
     }
     withType<KotlinCompile> {
         kotlinOptions {
@@ -57,8 +58,10 @@ tasks {
         }
     }
     test {
-        // Use junit platform for unit tests.
         useJUnitPlatform()
+    }
+    build {
+        dependsOn(shadowJar)
     }
 }
 
