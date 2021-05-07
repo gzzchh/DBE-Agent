@@ -4,45 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d102c28-3afb-4574-9856-5a155edc7410" name="默认的" comment="默认的">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/com.dbeaver.ee.runtime_2.0.81.202103102007.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/com.dbeaver.lm.core_2.0.81.202103102007.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/org.jkiss.lm_1.0.105.202103102007.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/org.jkiss.utils_2.1.135.202103102007.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dev/misakacloud/dbee/UltimateLicense.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DBeaver-Agent.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README-63-70.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/Agent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/misakacloud/dbee/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/enums/LMLicenseFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/enums/LMLicenseStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/enums/LMLicenseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/enums/LMSerializeFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMSerializeFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/enums/LMStatusDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMStatusDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/interceptor/CheckCustomerInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/CheckCustomerInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/interceptor/CheckLicenseInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/CheckLicenseInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/interceptor/LoadKeyInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/LoadKeyInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/interceptor/PingCheckInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/interceptor/PingCheckInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/utils/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/Convert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/utils/MyCryptKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/MyCryptKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/dev/misakacloud/dbee/utils/OldCryptKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/OldCryptKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/resources/6.3-Trial" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/6.3-Trial" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/resources/6.3-Trial-2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/6.3-Trial-2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/resources/dbeaver-ee.lic" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dbeaver-ee.lic" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/resources/trial-request.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trial-request.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/com.dbeaver.ee.runtime_2.0.51.201912081802.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="6d102c28-3afb-4574-9856-5a155edc7410" name="默认的" comment="默认的" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,7 +131,7 @@
       <workItem from="1620387914422" duration="17000" />
       <workItem from="1620387940759" duration="10000" />
       <workItem from="1620387960077" duration="19000" />
-      <workItem from="1620387993081" duration="6486000" />
+      <workItem from="1620387993081" duration="7134000" />
     </task>
     <servers />
   </component>
