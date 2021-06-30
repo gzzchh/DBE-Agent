@@ -7,19 +7,7 @@
     <list default="true" id="6d102c28-3afb-4574-9856-5a155edc7410" name="默认的" comment="默认的">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/License.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMLicenseType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMSerializeFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/enums/LMStatusDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/Convert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/misakacloud/dbee/utils/OldCryptKey.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/6.3-Trial" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/research/6.3-Trial" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/6.3-Trial-2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/research/6.3-Trial-2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dbeaver-ee.lic" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/research/dbeaver-ee.lic" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/trial-request.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/research/trial-request.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/misakacloud/dbee/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/misakacloud/dbee/UltimateLicense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/misakacloud/dbee/UltimateLicense.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +42,6 @@
                 <item name="dbeaver-agent" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="dbeaver-agent" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="shadow" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -106,6 +88,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -233,10 +219,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.dbeaver-agent [build]" />
+        <item itemvalue="Gradle.UltimateLicense.genUltimateLicense" />
         <item itemvalue="Gradle.dbeaver-agent [clean]" />
         <item itemvalue="Gradle.dbeaver-agent [jar]" />
         <item itemvalue="Gradle.dbeaver-agent [shadowJar]" />
-        <item itemvalue="Gradle.UltimateLicense.genUltimateLicense" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +239,10 @@
       <workItem from="1620387914422" duration="17000" />
       <workItem from="1620387940759" duration="10000" />
       <workItem from="1620387960077" duration="19000" />
-      <workItem from="1620387993081" duration="10474000" />
+      <workItem from="1620387993081" duration="11462000" />
+      <workItem from="1620925965656" duration="508000" />
+      <workItem from="1620995820106" duration="3000" />
+      <workItem from="1625074272050" duration="443000" />
     </task>
     <servers />
   </component>

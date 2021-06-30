@@ -26,24 +26,20 @@ dependencies {
 
 tasks {
     withType<Jar> {
-        // Otherwise you'll get a "No main manifest attribute" error
         manifest {
-//            attributes["Main-Class"] = "dev.misakacloud.dbee.Main"
             attributes["Premain-Class"] = "dev.misakacloud.dbee.Agent"
             attributes["Can-Retransform-Classes"] = "true"
             attributes["Can-Redefine-Classes"] = "true"
-            attributes["Boot-Class-Path"] = "dbeaver-agent-all.jar"
+            attributes["Boot-Class-Path"] = "dbeaver-agent.jar"
         }
 
     }
     named<ShadowJar>("shadowJar") {
 //        archiveBaseName.set("dbeaver-agent-all.jar")
-        archiveFileName.set("dbeaver-agent-all.jar")
+        archiveFileName.set("dbeaver-agent.jar")
         mergeServiceFiles()
         dependencies {
-//            exclude {
-//
-//            }
+
             exclude("/org/jkiss/**/*")
             exclude("/com/dbeaver/**/*")
             exclude("/research")

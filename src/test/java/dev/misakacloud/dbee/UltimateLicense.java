@@ -35,7 +35,7 @@ public class UltimateLicense {
                                           new Date(),
                                           new Date(),
                                           // 这样子就是没有到期
-                                          (Date) null,
+                                          null,
                                           0L,
                                           productID,
                                           productVersion,
