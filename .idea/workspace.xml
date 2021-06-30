@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d102c28-3afb-4574-9856-5a155edc7410" name="默认的" comment="默认的">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/misakacloud/dbee/UltimateLicense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/misakacloud/dbee/UltimateLicense.java" afterDir="false" />
-    </list>
+    <list default="true" id="6d102c28-3afb-4574-9856-5a155edc7410" name="默认的" comment="默认的" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,7 +238,7 @@
       <workItem from="1620387993081" duration="11462000" />
       <workItem from="1620925965656" duration="508000" />
       <workItem from="1620995820106" duration="3000" />
-      <workItem from="1625074272050" duration="443000" />
+      <workItem from="1625074272050" duration="459000" />
     </task>
     <servers />
   </component>

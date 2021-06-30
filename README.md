@@ -20,3 +20,32 @@
 - `com.dbeaver.lm.core` 许可核心
 - `org.jkiss.lm` 还是许可核心
 - `org.jkiss.utils` 提供一些组件供许可生成
+
+## 怎么用?
+
+直接 `./gradlew build` 构建就可以了.  
+生成的 `dbeaver-agent.jar` 放到任何你喜欢的地方
+
+> 但还是推荐放到安装目录
+
+修改 DBeaver 安装目录的 `dbeaver.ini` 给他加点参数  
+在 `-vmargs` 下面一行加 `-javaagent:{你的jar路径}`  
+就像这样
+
+```ini
+-startup
+plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar
+--launcher.library
+plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.2.100.v20210209-1541
+-vmargs
+-javaagent:/usr/share/dbeaver/dbeaver-agent.jar
+-XX:+IgnoreUnrecognizedVMOptions
+--add-modules=ALL-SYSTEM
+-Dosgi.requiredJavaVersion=11
+-Xms128m
+-Xmx2048m
+```
+
+然后呢,需要删掉 DBeaver 自带的 jre 就好了
+
+> 对于 DBeaver >= 20 需要自备 Java11
